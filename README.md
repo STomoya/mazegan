@@ -1,7 +1,16 @@
 
+
 # mazegan
 
 Solving maze via image-to-image translation.
+
+## Results
+
+<div align="center">
+ 	<img alt="alt" src="https://raw.githubusercontent.com/STomoya/mazegan/master/result/31000.png">
+ </div>
+
+maze image -> generated solved image -> real solved image * 3  
 
 ## Maze Generator
 
@@ -25,7 +34,7 @@ Modified to use spectral normalization on every convolution layers.
 ### Discriminator
 
 PatchGAN with receptive field of 70x70 used in pix2pix.  
-[paper](https://arxiv.org/abs/1611.07004) | [code](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+[paper](https://arxiv.org/abs/1611.07004) | [code](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)  
 Modified to use spectral normlization on every convolution layers.  
 
 ## Training
