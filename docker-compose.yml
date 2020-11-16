@@ -1,0 +1,14 @@
+version: '2.3'
+services:
+    python:
+        build:
+            context: .
+            dockerfile: ./docker/Dockerfile
+        volumes:
+            - .:/usr/src
+        working_dir: /usr/src
+        shm_size: '2gb'
+        runtime: nvidia
+        environment:
+            - NVIDIA_VISIBLE_DEVICES=all
+            - NVIDIA_DRIVER_CAPABILITIES=all
